@@ -1,0 +1,126 @@
+/*adding boarders to table elements and ensuring they fit properly within the boxes*/
+td, th {
+  width: 127px;
+  height: 40px;
+  border: 1px solid black;
+  padding: 0px;
+}
+
+/*Everything below this point, I didn't know you could use a comma to edit the style on multiple things at once thats why it's such a mess*/
+
+/*font has to be the same for all text because there's no good fonts for headings that are web safe*/
+p {
+  font-family: "courier new";
+}
+
+table {
+  font-family: "courier new";
+  border-collapse: seperate;
+}
+
+h1 {
+  font-family: "courier new";
+}
+
+h2 {
+  font-family: "courier new";
+}
+
+/*this is pretty redundant tbh theres no real point in doing this here and not inline but I can't be bothered to fix this yet*/
+.image-center {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/*Code for making the navbar scroll with the page*/
+.navbar{
+  position: fixed;
+}
+
+/*Move to class*/ 
+li{
+  list-style-type: none;
+  display: inline;
+  margin: 0 1vw;
+  font-family: 'courier new';
+}
+
+/*This removes the underline from links, to be honest I don't entirely remember why I put the padding here*/
+a{
+  text-decoration: none;
+  padding: 2vw;
+}
+
+/*For some reason I need the width to be that weird number for it to line up with the header div*/
+nav{
+  width: 98.3vw;
+  background-color: #7A1600;
+  border: 3px outset black;
+}
+
+/*Move this to a class because I want to be able to use lists again*/
+ul{ 
+  padding: 0;
+  margin: 0;
+}
+
+/*Header div adds box and centers itself*/
+.header {
+  border: 5px outset black;
+  background-color: #7A1600;
+  text-align: center;
+}
+
+.para {
+  border: 5px outset black;
+  background-color: #7A1600;
+  text-align: center;
+  float: right;
+  width: 54%;
+  margin-right: 40px;
+}
+/*Theres almost certainly a lot of redundant stuff in this but it took so long to get this working that I don't want to remove any of this*/
+.boxleft {
+  border: 5px outset black;
+  background-color: #7A1600;
+  text-align: center;
+  width: 400px;
+  height: 200px;
+  float: left;
+  display: inline-block;
+}
+
+.boxmid {
+  border: 5px outset black;
+  background-color: #7A1600;
+  text-align: center;
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  margin-left: -210px;
+  
+}
+
+.boxright {
+  border: 5px outset black;
+  background-color: #7A1600;
+  text-align: center;
+  width: 400px;
+  height: 200px;
+  float: right;
+  display: inline-block;
+}
+
+/*this is actually used to change the color of links, I don't know why it isn't just in .a though? I think it's because the class on the links it affects are set as link so this is a good way to take css out of the html documents and not affect all of the same type of element. Try this with lists at some point*/
+.link {
+  color:#8B8585;
+}
+
+body{
+	color:#8B8585;
+	background-color:#424141;
+}
